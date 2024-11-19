@@ -138,7 +138,9 @@ img {
 
  /* Mobile da 0 a 480px  */
  @media screen and (max-width: 480px) {
-    .lessons .row, .steps .row, .why-us .row {
+    .lessons .row, 
+    .steps .row, 
+    .why-us .row {
         flex-wrap: wrap;
     } 
     .lessons .col,
@@ -150,10 +152,13 @@ img {
     .lessons .col:first-child {
         margin-bottom: 60px;
     }
+    .steps {
+        margin-bottom: 0;
+    }
     .why-us {
         background-color: #222222;
         margin-bottom: 0;
-        padding: 3rem 0;
+        padding: 50px 0;
     }
     .steps .col:not(:last-child),
     .why-us .col-left {
